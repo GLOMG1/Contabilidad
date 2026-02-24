@@ -1,0 +1,82 @@
+﻿<Window x:Class="Kuni.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kuni"
+        mc:Ignorable="d"
+        Title="Kuni" Height="600" Width="1000"
+        Background="Transparent"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "1*"/>
+            <ColumnDefinition Width = "4*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                <Button Content="Buscar" Margin= "5"/>
+                <Button Content="Conciliar" Margin="5" Height="80"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="1*"/>
+                <RowDefinition Height ="4*"/>
+                <RowDefinition Height ="1*"/>
+                <RowDefinition Height ="4*"/>
+            </Grid.RowDefinitions>
+
+            <UniformGrid Grid.Row="0" Rows="2" Columns="4" Margin="10,10,10,0">
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+            </UniformGrid>
+
+
+            <ListView Grid.Row="1" Margin="10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Fecha" Width="60"/>
+                        <GridViewColumn Header="Concepto" Width="200"/>
+                        <GridViewColumn Header="Referencia" Width="200"/>
+                        <GridViewColumn Header="Importe" Width="100"/>
+                        <GridViewColumn Header="Clasificacion" Width="150"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <UniformGrid Grid.Row="2" Rows="2" Columns="4" Margin="10,10,10,0">
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+                <TextBox Margin="1"/>
+            </UniformGrid>
+
+
+            <ListView Grid.Row="3" Margin="10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Fecha" Width="60"/>
+                        <GridViewColumn Header="Concepto" Width="200"/>
+                        <GridViewColumn Header="Referencia" Width="200"/>
+                        <GridViewColumn Header="Importe" Width="100"/>
+                        <GridViewColumn Header="Clasificacion" Width="150"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>
